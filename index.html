@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="赵思远的视觉设计、APP设计与工业设计服务网站" />
+    <title>ZSY Studio — 品牌与产品设计</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="nav">
+        <a class="brand" href="#top" aria-label="ZSY Studio 首页">
+          <span class="brand-mark">Z</span>
+          <span>ZSY STUDIO</span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="#services">服务</a>
+          <a href="#about">关于</a>
+          <a href="#contact">联系</a>
+        </nav>
+        <a class="nav-cta" href="#contact">开始项目 <span>↗</span></a>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> 独立设计工作室</p>
+            <h1>让好创意，<br /><em>拥有好形状。</em></h1>
+            <p class="intro">我为品牌与产品提供清晰、独特且富有温度的设计方案，从策略到落地，一起把想法变成现实。</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#services">探索服务 <span>↓</span></a>
+              <a class="text-link" href="tel:17854295938">直接电话沟通 <span>↗</span></a>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="设计工作室展示图">
+            <div class="orb orb-large"></div>
+            <div class="orb orb-small"></div>
+            <div class="grid-lines"></div>
+            <div class="poster poster-back">
+              <span>FORM</span>
+              <strong>02</strong>
+            </div>
+            <div class="poster poster-front">
+              <div class="poster-symbol">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="poster-caption">
+                <b>视觉 / 数字 / 产品</b>
+                <small>DESIGN FOR PEOPLE</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> 我能提供的帮助</p>
+              <h2>选择你的设计方向</h2>
+            </div>
+            <p>根据项目需求提供策略、创意与执行全流程支持。</p>
+          </div>
+
+          <div class="service-grid">
+            <button class="service-card active" type="button" data-service="视觉设计">
+              <div class="card-number">01</div>
+              <div class="card-icon visual-icon" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="card-copy">
+                <h3>视觉设计</h3>
+                <p>品牌视觉、海报、包装与活动视觉系统</p>
+              </div>
+              <span class="card-arrow">↗</span>
+            </button>
+
+            <button class="service-card" type="button" data-service="APP设计">
+              <div class="card-number">02</div>
+              <div class="card-icon app-icon" aria-hidden="true">
+                <span class="phone-screen"></span>
+              </div>
+              <div class="card-copy">
+                <h3>APP 设计</h3>
+                <p>产品体验、界面设计与可用性原型</p>
+              </div>
+              <span class="card-arrow">↗</span>
+            </button>
+
+            <button class="service-card" type="button" data-service="工业设计">
+              <div class="card-number">03</div>
+              <div class="card-icon product-icon" aria-hidden="true">
+                <span></span>
+              </div>
+              <div class="card-copy">
+                <h3>工业设计</h3>
+                <p>产品造型、结构概念与设计到生产落地</p>
+              </div>
+              <span class="card-arrow">↗</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <p class="eyebrow light"><span></span> 关于工作室</p>
+          <div class="about-grid">
+            <h2>简单方法，<br />做有价值的设计。</h2>
+            <div class="about-copy">
+              <p>我相信优秀的设计首先要解决问题，其次才是创造惊喜。每一次合作都从理解你的目标开始。</p>
+              <div class="stats">
+                <div><strong>3+</strong><span>设计方向</span></div>
+                <div><strong>1:1</strong><span>项目沟通</span></div>
+                <div><strong>全程</strong><span>设计支持</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="contact-heading">
+            <p class="eyebrow"><span></span> 开始一个项目</p>
+            <h2>有一个想法？<br /><em>聊聊吧。</em></h2>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="field full">
+              <label for="service">你需要哪种设计？</label>
+              <select id="service" name="service">
+                <option>视觉设计</option>
+                <option>APP设计</option>
+                <option>工业设计</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="name">你的称呼</label>
+              <input id="name" name="name" type="text" placeholder="怎么称呼您？" required />
+            </div>
+            <div class="field">
+              <label for="email">联系方式</label>
+              <input id="email" name="email" type="text" placeholder="手机号或邮箱" required />
+            </div>
+            <div class="field full">
+              <label for="message">简单介绍项目</label>
+              <textarea id="message" name="message" rows="4" placeholder="项目目标、内容和预算范围……" required></textarea>
+            </div>
+            <button class="button button-primary submit-button" type="submit">发送咨询 <span>↗</span></button>
+          </form>
+
+          <div class="contact-details">
+            <a href="tel:17854295938"><span>电话</span><strong>17854295938</strong></a>
+            <a href="mailto:804521562@qq.com"><span>邮箱</span><strong>804521562@qq.com</strong></a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <a class="brand footer-brand" href="#top"><span class="brand-mark">Z</span><span>ZSY STUDIO</span></a>
+        <p>© 2026 ZSY Studio. 保留所有权利。</p>
+        <a href="#top">回到顶部 ↑</a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
